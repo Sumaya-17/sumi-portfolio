@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  *{
+    text-align: center;
+    box-sizing: border-box;
+  }
+  h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+ body{
+    background:linear-gradient(rgb(131, 131, 230),rgb(252, 248, 249) ,rgb(13, 109, 219));
+  }
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+center {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: #4682b4;
+    padding: 20px;
+    color: rgb(12, 12, 12);
+    text-align: center;
+}
+
+nav a {
+    color: rgb(59, 39, 39);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #070808;
+}
+
+p, span {
+    color: #333;
+}
+
+.announcement {
+    background-color: #add8e6;
+    color: #000080;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Search Box Style */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4682b4;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a9bd4;
+}
+
+/* Table Styles */
+.table-container {
+    width: 60%; /* Adjusted size to make it smaller */
+    margin: 0 auto; /* Center align the table */
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #007BFF; /* Blue theme for the header */
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #e3f2fd; /* Light blue on hover */
+}
+
+td a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        width: 90%; /* Responsive adjustment for smaller screens */
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Centers items horizontally */
+    padding: 20px; /* Padding around the gallery */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column; /* Stacks image and description vertically */
+    align-items: center; /* Centers content horizontally */
+    flex: 1 1 calc(50% - 20px); /* Ensures two items per row, minus the gap */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    border-radius: 16px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visual separation */
+}
+
+.image-description {
+    margin-top: 10px; /* Spacing between image and description */
+    text-align: center; /* Center-aligns the text */
+    color: #333; /* Color for the description text */
+    font-size: 14px; /* Font size for the description text */
+}
+.image-button {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds space inside the button */
+    margin-top: 10px; /* Spacing between image description and button */
+    text-decoration: none; /* Removes underline from the link */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color of the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Centers text inside the button */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+.image-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block-level element */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between header elements */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Optional: Add a background color to the header */
+    position: relative; /* Ensure correct positioning of elements */
+}
+
+.btn-close {
+    margin-left: auto; /* Pushes the button to the right */
+    order: 1; /* Ensures button stays on the right side */
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 16px; /* Optional: Adjust size for visibility */
+    position: absolute; /* Position button independently */
+    right: 20px; /* Adjusts the distance from the right */
+}
+
+h1 {
+    flex-grow: 1; /* Allows the title to occupy available space */
+    text-align: center; /* Centers the title text */
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+
+

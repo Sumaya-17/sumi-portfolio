@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - AI & Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+/* THEME PRESERVED */
+body{
+    background:linear-gradient(rgb(131,131,230),rgb(252,248,249),rgb(13,109,219));
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+    background-color:#4682b4;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    font-family:"Pacifico",cursive;
+}
+
+/* MARQUEE */
+marquee{
+    background-color:#add8e6;
+    padding:10px;
+    border-radius:5px;
+}
+
+/* SECTION CARD STYLE */
+.background-section{
+    background:linear-gradient(to right, rgba(131,131,230,0.1), rgba(252,248,249,0.5), rgba(13,109,219,0.1));
+    padding:40px 20px;
+    border-radius:12px;
+    margin:30px auto;
+    max-width:900px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    animation:fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp{
+    from{opacity:0;transform:translateY(40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+.section-title{
+    font-size:2rem;
+    font-weight:bold;
+    color:#0b60bb;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.section-title::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background:#0b60bb;
+    margin:10px auto;
+}
+
+/* TABLE STYLE */
+.table-container{
+    width:85%;
+    margin:auto;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th,td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+}
+
+th{
+    background:#007BFF;
+    color:white;
+}
+
+tr:hover{
+    background:#e3f2fd;
+}
+
+/* ACHIEVEMENT TABLE */
+.achievement-table{
+    margin-top:40px;
+}
+
+/* DIAGONAL CARD STYLE */
+.diagonal-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:60px auto;
+    max-width:1000px;
+    width: calc(100% - 32px);
+    gap:40px;
+    animation:fadeInUp 1s ease;
+}
+
+.diagonal-card:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.diagonal-card img{
+    width:100%;
+    max-width:400px;
+    aspect-ratio: 10 / 7;
+    height:auto;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.diagonal-card img:hover{
+    transform:scale(1.05);
+}
+
+.card-content{
+    flex:1;
+}
+
+.card-content h3{
+    color:#0b60bb;
+}
+
+.card-content a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 16px;
+    background:#007bff;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.card-content a:hover{
+    background:#0056b3;
+}
+
+/* FOOTER */
+footer{
+    background-color:#4682b4;
+    color:white;
+    text-align:center;
+    padding:12px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .diagonal-card{
+        flex-direction:column !important;
+        text-align:center;
+        gap: 20px;
+        margin: 30px auto;
+    }
+
+    .background-section{
+        margin: 16px 12px;
+        padding: 20px 14px;
+    }
+
+    .section-title{
+        font-size: 1.4rem;
+    }
+
+    th, td{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+<a class="navbar-brand" href="about1.html">ABOUT</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAbout">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAbout">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+<li class="nav-item"><a class="nav-link" href="contact1.html">contact</a></li>
+<li class="nav-item"><a class="nav-link" href="registration1.html">registration</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<h1>About Me</h1>
+</header>
+
+<marquee><b>Exploring Artificial Intelligence, Data Science & Full Stack Development</b></marquee>
+
+<main>
+
+<section class="background-section">
+<h2 class="section-title">My Background</h2>
+<p>
+I am an Artificial Intelligence & Data Science undergraduate with a CGPA of <strong>8.6</strong>, passionate about building intelligent systems that solve meaningful real-world problems. My academic journey blends analytical thinking with practical implementation â€” from machine learning models to full-stack web applications. I actively pursue internships, industrial visits, and collaborative projects to transform theoretical knowledge into deployable solutions. My core interests include Data Analytics, AI Model Development, and Scalable Web Systems.
+</p>
+</section>
+
+<section class="background-section">
+<h2 class="section-title">Academic Timeline & Skill Growth</h2>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Institution</th>
+<th>Development & Achievements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019-2020</td>
+<td>10th â€“ Islamiah Matric Hr Sec School</td>
+<td>77.2% | Inter-school Science Quiz Winner</td>
+</tr>
+<tr>
+<td>2021-2022</td>
+<td>12th â€“ Islamiah Matric Hr Sec School</td>
+<td>87.67% | Strong foundation in Mathematics & Python</td>
+</tr>
+<tr>
+<td>2022-Present</td>
+<td>Mohamed Sathak Engineering College (AI & DS)</td>
+<td>
+CGPA: 8.6<br>
+Python, Java, C, HTML, CSS, JavaScript<br>
+Machine Learning, Data Analytics, Model Development<br>
+Full Stack Development<br>
+Internships in Data Science & Full Stack
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="background-section achievement-table">
+<h2 class="section-title">Major Achievements</h2>
+<div class="table-container">
+<table>
+<tr>
+<th>Achievement</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Department Website Development</td>
+<td>Developed AI & DS Department Website (Group Project) â€“ 
+<a href="https://msec-aids.web.app/" target="_blank">View Website</a></td>
+</tr>
+<tr>
+<td>Internships</td>
+<td>Completed multiple internships in Full Stack Development, Data Science & Model Development</td>
+</tr>
+<tr>
+<td>Campus Placement</td>
+<td>Selected in <strong>Spacezee Technologies</strong> through college campus placement</td>
+</tr>
+</table>
+</div>
+</section>
+
+<!-- DIAGONAL IMAGE CARDS -->
+
+<div class="diagonal-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Networking Course">
+    <div class="card-content">
+        <h3>Networking Course Completion</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_just-completed-my-course-on-cisco-networking-activity-7180571883573047300-0Oyt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">View Certificate</a>
+    </div>
+</div>
+
+<div class="diagonal-card">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Data Analytics & Data Science">
+    <div class="card-content">
+        <h3>Data Analytics & Data Science Certifications</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_just-completed-my-course-on-data-analytics-activity-7180574086522126337-eACI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Data Analytics Certificate</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_just-completed-my-course-on-introduction-activity-7180574798786269184-xdO2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Data Science Certificate</a>
+    </div>
+</div>
+
+<div class="diagonal-card">
+    <img src="https://media.licdn.com/dms/image/v2/D5622AQGcSCSoNp_ZnA/feedshare-shrink_800/feedshare-shrink_800/0/1701411724560?e=2147483647&v=beta&t=qI5veqsBDKYYg66JZ21H__Pw97QwUhnnOiQEdYFCUhY" alt="CodersCave Internship">
+    <div class="card-content">
+        <h3>CodersCave Internship â€“ Data Science</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_got-the-offer-letter-for-an-internship-from-activity-7190254843427467265-q6v5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Offer Letter</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_internship-coderscave-techskills-activity-7199416519569625088-gUJ_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Completion Certificate</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_internship-coderscave-techskills-activity-7201738200963244032-yXIh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Letter of Recommendation</a>
+    </div>
+</div>
+
+<div class="diagonal-card">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Full Stack & Web Internship">
+    <div class="card-content">
+        <h3>Full Stack & Web Development Internships</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_internship-fullstackdeveloper-coderscave-activity-7243545000322473984-EjD4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">CodersCave Full Stack Offer Letter</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_course-completion-certificate-activity-7253394562407153664-ycFT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">CodersCave Full Stack Completion</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_during-my-internship-at-aasva-technologies-activity-7237817621344100352-MqXk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Aasva Technologies Internship Completion</a>
+    </div>
+</div>
+
+<div class="diagonal-card">
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/12/full/1691816958-8493.jpg" alt="Industrial Visit & AI Certifications">
+    <div class="card-content">
+        <h3>Industrial Visit & AI / IoT Certifications</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_industrialvisit-hcltechnologies-madurai-activity-7253395950658859009-_ifx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">HCL Technologies Industrial Visit</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_course-completion-activity-7253698400863301632-4JLQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">AI Fundamentals Certificate</a><br>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_course-completion-activity-7253698866699513856-7CM9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">IoT Certificate</a>
+    </div>
+</div>
+
+<div class="diagonal-card">
+    <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Campus Placement">
+    <div class="card-content">
+        <h3>Campus Placement â€“ Spacezee Technologies</h3>
+        <a href="https://www.linkedin.com/posts/saheedha-sumaya-38435a261_campusplacement-careermilestone-professionalgrowth-activity-7433941924518207488-Yqmw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEBNTpQB7Fg0WX3I1sxejOHROiaKyCXXD1Q" target="_blank">Letter of Intent</a>
+    </div>
+</div>
+
+</main>
+
+<footer>
+Â© 2024 SUMII'S Portfolio | All Rights Reserved
+</footer>
+
+</body>
+</html>

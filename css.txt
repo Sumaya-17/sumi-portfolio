@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: #4682b4;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #2e8b57;
+}
+
+p, span {
+    color: #333;
+}
+
+marquee {
+    background-color: #add8e6;
+    color: #000080;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Search Box Style */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4682b4;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a9bd4;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #4682b4;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4682b4;
+    color: white;
+}
+
+td ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+}

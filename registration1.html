@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration - AI & Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* Background Theme (unchanged) */
+body{
+    font-family: Arial, sans-serif;
+    background:linear-gradient(rgb(131,131,230),rgb(252,248,249),rgb(13,109,219));
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    background-color:#4682b4;
+    padding:20px;
+    text-align:center;
+    position:relative;
+}
+
+h1{
+    font-family:"Pacifico",cursive;
+    background: linear-gradient(-45deg,#fff,#dbeafe,#ffffff);
+    background-size:300% 300%;
+    -moz-animation: text;
+    -webkit-text-fill-color:transparent;
+    animation:gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Announcement Banner */
+.announcement{
+    background-color:#add8e6;
+    padding:10px;
+    border-radius:5px;
+    text-align:center;
+}
+
+/* Signup Section */
+.signup-section{
+    padding:25px;
+    max-width:420px;
+    margin:40px auto;
+    background:linear-gradient(rgb(173,216,230),rgb(252,228,236),rgb(135,206,250));
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    animation:fadeInUp 1s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+@keyframes fadeInUp{
+    from{opacity:0;transform:translateY(30px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+.signup-section h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-decoration:underline;
+}
+
+/* Floating AI Icons */
+.floating-icon{
+    position:absolute;
+    width:60px;
+    opacity: 1;;
+    animation:float 6s ease-in-out infinite;
+}
+
+.circle-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.square-img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.icon1{top:10px;left:10px;}
+.icon2{bottom:10px;right:10px;animation-delay:2s;}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+}
+
+/* Form */
+.signup-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.form-group{
+    width:100%;
+    margin-bottom:15px;
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-size:16px;
+    margin-bottom:5px;
+    text-align:center;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    width:90%;
+    max-width:300px;
+    margin:auto;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#60a5fa;
+    box-shadow:0 0 8px rgba(96,165,250,0.5);
+}
+
+/* Password Strength */
+.strength{
+    font-size:12px;
+    margin-top:5px;
+    text-align:center;
+}
+
+/* Register Button */
+.register-btn{
+    width:90%;
+    max-width:300px;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    background-color:#2563eb;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.register-btn:hover{
+    background-color:#1e40af;
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    background-color:#4682b4;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:40px;
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 14px;
+    }
+
+    .signup-section{
+        width: calc(100% - 24px);
+        margin: 20px auto;
+        padding: 18px 14px;
+    }
+
+    .floating-icon{
+        display:none;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+<a class="navbar-brand" href="registration1.html">REGISTRATION</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavRegistration">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavRegistration">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+<li class="nav-item"><a class="nav-link" href="about1.html">about</a></li>
+<li class="nav-item"><a class="nav-link" href="contact1.html">contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<h1>Registration</h1>
+</header>
+
+<div class="announcement"><b>Register to get access to more features and updates!</b></div>
+<hr>
+
+<!-- Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Registration Successful</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Thank you for registering! You will receive a confirmation email shortly.</p>
+</div>
+</div>
+</div>
+</div>
+
+<main>
+<section class="signup-section">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeujNC6ceyJ7oGNPRURpJY-yj7hz5iRAhag&s" 
+     class="floating-icon icon1 circle-img" 
+     alt="AI Icon">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8k415dgHbWhjB5mLHOlyAXcaZef7gd7mAg&s" 
+     class="floating-icon icon2 square-img" 
+     alt="Tech Icon">
+<h2>Sign Up</h2>
+
+<form class="signup-form" id="signupForm" novalidate>
+
+<div class="form-group">
+<label>Username:</label>
+<input type="text" id="username" placeholder="Choose a username" required>
+</div>
+
+<div class="form-group">
+<label>Email:</label>
+<input type="email" id="email" placeholder="Your email" required>
+</div>
+
+<div class="form-group">
+<label>Password:</label>
+<input type="password" id="password" placeholder="Choose a password" required>
+<div class="strength" id="strengthText"></div>
+</div>
+
+<div class="form-group">
+<label>Confirm Password:</label>
+<input type="password" id="confirm-password" placeholder="Confirm password" required>
+</div>
+
+<div class="form-group">
+<label>Age:</label>
+<input type="number" id="age" min="18" max="60" placeholder="Enter your age" required>
+</div>
+
+<button type="submit" class="register-btn" id="registerBtn">
+Register
+</button>
+
+</form>
+</section>
+</main>
+
+<footer>
+&copy; 2024 SUMII'S Portfolio | All Rights Reserved
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const passwordInput = document.getElementById("password");
+const strengthText = document.getElementById("strengthText");
+const signupForm = document.getElementById("signupForm");
+
+passwordInput.addEventListener("input", function(){
+let value = passwordInput.value;
+if(value.length < 4){
+strengthText.textContent="Weak Password";
+strengthText.style.color="red";
+}else if(value.length < 8){
+strengthText.textContent="Medium Strength";
+strengthText.style.color="orange";
+}else{
+strengthText.textContent="Strong Password";
+strengthText.style.color="green";
+}
+});
+
+signupForm.addEventListener("submit", function(event){
+event.preventDefault();
+
+const username = document.getElementById('username').value.trim();
+const email = document.getElementById('email').value.trim();
+const password = document.getElementById('password').value;
+const confirmPassword = document.getElementById('confirm-password').value;
+const age = document.getElementById('age').value;
+
+if(!signupForm.checkValidity()){
+signupForm.reportValidity();
+return;
+}
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailPattern.test(email)){
+alert("Please enter a valid email address.");
+ return;
+}
+
+if(password !== confirmPassword){
+alert("Passwords do not match.");
+return;
+}
+
+if(age < 18 || age > 60){
+alert("Age must be between 18 and 60.");
+return;
+}
+
+const modal = new bootstrap.Modal(document.getElementById("registrationModal"));
+modal.show();
+
+});
+
+});
+</script>
+
+</body>
+</html>
+
+
